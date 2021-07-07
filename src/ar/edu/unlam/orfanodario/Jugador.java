@@ -15,5 +15,25 @@ public Jugador(Integer dni,Integer nroCamiseta,String posicion,String nombre, St
 	
 }
 
+
+public Integer getNroCamiseta() {
+	return nroCamiseta;
+}
+
+
+public void setNroCamiseta(Integer nroCamiseta) {
+	this.nroCamiseta = nroCamiseta;
+}
+
+
+public String getPosicion() {
+	return posicion;
+}
+
+
+public void setPosicion(String posicion) {
+	this.posicion = posicion;
+}
+
 	
 }

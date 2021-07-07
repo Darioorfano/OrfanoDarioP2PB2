@@ -39,10 +39,23 @@ public class TorneoTest {
 	assertEquals(12, argentina.obtenerCantidadDeJugadoresEnElEquipo(),0.01);
 	
 	}
+	
+	
+	@Test
+	public void testQueVerificaQueElLosPartidosSeRegistraronCorrectamente() {
+		Torneo torneo=new Torneo("Copa America");
+		Equipo argentina=new Equipo("Argentina");
+		Equipo chile=new Equipo("Chile");
+		Jugador jugador1=new Jugador(41582343,1,"Def","Dario","Orfano","Argentina");
+		Partido partido=new Partido(argentina,chile);
+		
+		
+		assertTrue(torneo.registrarPartidos(partido));
+	}
 
-	
-	
-	
-	
-	
+
 }
+	
+	
+	
+
